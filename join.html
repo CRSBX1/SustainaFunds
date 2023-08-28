@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="Assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>JOIN US</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="index1.html"><img src="Assets/Images/iconv2.png" height="50" width="auto"></a>
+        <nav style="display: flex; align-items: center">
+          <a class="header-text-link" style="text-decoration: none;" href="index1.html#seksi">Investasi</a>
+          <a class="header-text-link" style="text-decoration: none;" href="FaQ.html">FAQ</a>
+          <a class="header-text-link" style="text-decoration: none;" href="#kontak">Contact Us</a>
+          <a class="header-text-link" style="text-decoration: none;" href="join.html">Join Us</a>
+          <a class="header-btn-link" href="login.html" style="text-decoration: none;">Login</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container-fluid">
+        <div class="row align-items-stretch" style="width: 100%;">
+          <div class="col-md-5 col-sm-12" style="color: white;" id="joinbg">
+            <div class="overlay pt-5">
+            <h1 id="fjoin" class="pt-5 pb-4 ps-5 pe-5">Mulailah Perjalananmu<br>Bersama Kami</h1>
+            <p class=" mt-1 pb-4 ps-5 pe-5">Tempuh langkah pertama ke masa depan yang cerah</p>
+            <img src="" class="img-fluid w-75">
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12 ps-5 pe-5 pt-5 pb-4">
+            <h3 style="text-align: left;" class="ms-4 mt-5">Lokasi-mu</h3>
+            <p style="text-align: left;" class="ms-4">Lokasi Anda adalah Kunci untuk Meraih Impian Bersama!</p>
+            <div style="display: flex; flex-direction: row;">
+             <input type="text" class="form-control m-4" required placeholder="Provinsi" style="width: 300px;">
+             <input type="text" class="form-control m-4" required placeholder="Kabupaten/Kota" style="width: 300px; height: fit-content;">
+            </div>
+            <div class="mt-3 ps-4">
+             <p style="padding-top: 0%; font-weight: 500; font-size: large; text-align: left;">Kategori apa yang paling cocok menggambarkan perusahaan-mu?</p>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-3" id="option1" style="border: 1px solid black;">Teknologi</button>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-3" id="option2" style="border: 1px solid black;">Industri Kreatif</button>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-3" id="option3" style="border: 1px solid black;">Lingkungan</button>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-3" id="option3" style="border: 1px solid black;">Edukasi</button>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-3" id="option3" style="border: 1px solid black;">Kesehatan</button>
+             <button type="button" class="btn mt-3 mb-3 ms-0 me-0" id="option3" style="border: 1px solid black;">Agrikultur dan Perikanan</button>
+            </div>
+            <div class="text-center pt-3">
+              <a href="index1.html"><button type="submit" class="btn btn-primary w-25 mt-5" id="submit" style="border: 1px solid black;">Submit</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+    const flexContainer = document.querySelector('.header');
+    flexContainer.style.boxShadow = '0px 5px 10px rgba(0, 0, 0, 0.1)';
+    </script>
+    <script src="Assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAK0xFbDIlksmycXKrdrVCBrXYyE4W_E_I",
+        authDomain: "sustainafunds.firebaseapp.com",
+        projectId: "sustainafunds",
+        storageBucket: "sustainafunds.appspot.com",
+        messagingSenderId: "470395919809",
+        appId: "1:470395919809:web:d52fa29cb5224c34036340",
+        measurementId: "G-XNVH1PJRKQ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    </body>
+    </html>

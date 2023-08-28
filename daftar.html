@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Favicon (Tab) -->
+    <link href="assets/favicon.ico" type="image" rel="icon" />
+    <!-- Title (Tab) -->
+    <title>Template</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="index1.html"><img src="Assets/Images/iconv2.png" height="50" width="auto"></a>
+        <nav style="display: flex; align-items: center">
+          <a class="header-text-link" href="index1.html#seksi" style="text-decoration: none;">Investasi</a>
+          <a class="header-text-link" href="FaQ.html" style="text-decoration: none;">FAQ</a>
+          <a class="header-text-link" href="index1.html#kontak" style="text-decoration: none;">Contact Us</a>
+          <a class="header-text-link" href="join.html" style="text-decoration: none;">Join Us</a>
+          <a class="header-btn-link" href="login.html" style="text-decoration: none;">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main" style="align-items: center;"> 
+        <h1 style="margin: 20px;">Sign In</h1>
+        <div
+        class="main-wrapper"
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          background-color: aliceblue;
+          width: fit-content;
+        "
+        id="form"
+        >
+        <div 
+            style="
+            display: flex;
+            flex-direction: column;
+        ">
+        <script>
+            const flexContainer = document.querySelector('.main-wrapper');
+            flexContainer.style.boxShadow = '0px 5px 10px rgba(0, 0, 0, 0.1)';
+        </script>
+        <p style="text-align: left; padding-left: 20px;">Nama Pengguna</p>
+        <input placeholder="Masukkan Nama Pengguna" type="text" name="nama" required>
+        <p style="text-align: left; padding-left: 20px;">E-mail</p>
+        <input placeholder="Masukkan email" type="email" name="email" required>
+        <p style="text-align: left; padding-left: 20px;">Password</p>
+        <input placeholder="Masukkan Password anda" type="password" name="sandi" required>
+        <p style="text-align: left; padding-left: 20px;">Confirm Password</p>
+        <input placeholder="Masukkan Password anda" type="password" name="sandi" required>
+        <button type="submit" name="submit" id="submit" href="#">Sign In</button>
+        <p>Sudah Terdaftar? Masuk di <a href="login.html" style="color: #00bf71;">disini</a></p>
+    </main>
+    <script src="script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAK0xFbDIlksmycXKrdrVCBrXYyE4W_E_I",
+        authDomain: "sustainafunds.firebaseapp.com",
+        projectId: "sustainafunds",
+        storageBucket: "sustainafunds.appspot.com",
+        messagingSenderId: "470395919809",
+        appId: "1:470395919809:web:d52fa29cb5224c34036340",
+        measurementId: "G-XNVH1PJRKQ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    </body>
+    </html>
+
+<!-- Prototype for the sign in option
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="Assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Sustainafunds - Dari Masyarakat ke Masyarakat</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="index1.html"><img src="Assets/Images/iconv2.png" height="50" width="auto"></a>
+        <nav style="display: flex; align-items: center">
+          <a class="header-text-link" style="text-decoration: none;" href="index1.html#seksi">Investasi</a>
+          <a class="header-text-link" style="text-decoration: none;" href="FaQ.html">FAQ</a>
+          <a class="header-text-link" style="text-decoration: none;" href="index1.html#kontaks">Contact Us</a>
+          <a class="header-text-link" style="text-decoration: none;" href="join.html">Join Us</a>
+          <a class="header-btn-link" href="login.html" style="text-decoration: none;">Login</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main bg-light" style="align-items: center;">
+      <h1 style="text-align: center; margin-top: 2%; font-size: 50px; font-weight: 800" id="seksi">Investasi</h1>
+      <div class="main-wrapper mt-3 mb-5 w-50 ps-5"
+        style="
+          display: flex;
+          flex-direction: column;
+          background-color: aliceblue;
+        "
+        id="form"
+        >
+        <div style="display: flex; flex-direction: column;">
+        <script>
+            const flexContainer = document.querySelector('.main-wrapper');
+            flexContainer.style.boxShadow = '0px 5px 10px rgba(0, 0, 0, 0.1)';
+        </script>
+        <p style="text-align: left;" class="mt-1 ms-5">Nama Pengguna</p>
+        <input type="text" class="form-control w-75 ms-5" required placeholder="Kuota Investasi">
+        <p style="text-align: left;" class="mt-1 ms-5">E-mail</p>
+        <input type="text" class="form-control w-75 ms-5" required placeholder="">
+        <p style="text-align: left;" class="mt-1 ms-5">Password</p>
+        <input type="text" class="form-control w-75 ms-5" required placeholder="">
+        <p style="text-align: left;" class="mt-1 ms-5">Confirm Password</p>
+        <input type="text" class="form-control w-75 ms-5" required placeholder="">
+        <a href="index1.html"><button type="submit" class="btn btn-primary w-50 mt-5 pt-2 pb-2" style="border: 1px solid black; margin: 0px 0px 0px 0px; background-color: #004B93">Submit</button></a>
+        </main>
+      <script>
+        const flexContainer = document.querySelector('.header');
+        flexContainer.style.boxShadow = '0px 5px 10px rgba(0, 0, 0, 0.1)';
+      </script>
+      <script src="Assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+      </html>
+      -->
