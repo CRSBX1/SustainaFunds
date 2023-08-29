@@ -225,7 +225,8 @@
 
   #bg{
     opacity: 0.8;
-    background-image: url(Assets/Images/bg.jpg);
+    background-image: url(Assets/Images/bg.jpeg);
+    background-size: cover;
   }
 
 
